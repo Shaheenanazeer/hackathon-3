@@ -5,13 +5,13 @@ import Link from 'next/link'
 import { IoLocationSharp } from 'react-icons/io5'
 import { FaPhoneAlt } from 'react-icons/fa'
 import { BsFillClockFill } from 'react-icons/bs'
-import Header from '../components/header'
+
 
 function Contact() {
     return (
         <div className="max-w-screen-xl container mx-auto pb-8 px-4">
              <div className='bg-[#faf4f4]'>
-                <Header />
+                
             </div>
             {/* Banner Section */}
             <div className="relative text-black">

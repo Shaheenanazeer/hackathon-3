@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
@@ -30,6 +31,8 @@ function Hero() {
             <div>
                 <div className='flex flex-col md:flex-row bg-[#F4F4F4] justify-around mx-auto p-10'>
                     <div>
+                    <Link href="/shop">
+
                         <Image
                             alt=''
                             className=''
@@ -37,12 +40,15 @@ function Hero() {
                             width={500}
                             src='/hero1.jpeg'
                         />
+                        </Link>
                         <h3 className='text-3xl font-medium'>Side table</h3>
                         <Link href='/'>
                             <p className="text-xl mt-8 underline underline-offset-8 text-black-600 ">View More</p>
                         </Link>
                     </div>
                     <div>
+                    <Link href="/shop">
+
                         <Image
                             alt=''
                             className=''
@@ -50,6 +56,7 @@ function Hero() {
                             width={500}
                             src='/hero2.jpeg'
                         />
+                        </Link>
                         <h3 className='text-3xl font-medium'>Side table</h3>
                         <Link href='/'>
                             <p className="text-xl mt-8 underline underline-offset-8 text-black-600 ">View More</p>
@@ -59,7 +66,7 @@ function Hero() {
                 <div className=" md:flex-row bg-[#FFFFFF] justify-around mx-auto py-10 px-4">
                     {/* Header Section */}
                     <div className="my-10 text-center mx-auto ">
-                        <h2 className="text-3xl font-medium">Top Picks For You</h2>
+                        <h2 className="text-3xl font-medium">Our Products</h2>
                         <p className="text-gray-500 mt-10">
                             Find a bright ideal to suit your taste with our great selection of suspension, floor, and table lights.
                         </p>
@@ -75,6 +82,7 @@ function Hero() {
                             { src: '/hero6.jpeg', name: 'Plain console with teak', price: 'Rs. 25,000.00' },
                         ].map((item, index) => (
                             <div key={index} className="flex flex-col text-left mx-auto h-[300px] w-[350px] ">
+                                <Link href="/shop">
                                 <Image
                                     src={item.src}
                                     alt={item.name}
@@ -82,19 +90,24 @@ function Hero() {
                                     width={350}
                                     className="rounded-lg h-[300px] w-[300px] object-cover"
                                 />
+                                </Link>
                                 <p className="text-sm font-medium  ">{item.name}</p>
                                 <h3 className="text-xl font-semibold">{item.price}</h3>
                             </div>
                         ))}
                     </div>
+                    <Link href="/shop">
 
                     <p className="text-xl text-center mx-auto my-20 underline underline-offset-8 text-black-600 ">View More</p>
+                    </Link>
                 </div>
 
             </div>
             <div className="flex flex-col bg-[#fff9e5] justify-around md:flex-row max-w-screen-2xl  p-3">
                 {/* Image Section */}
                 <div className="mt-6 md:mt-0 md:ml-10">
+                <Link href="/shop">
+
                     <Image
                         src="/hero7.jpeg"
                         height={900}
@@ -102,6 +115,7 @@ function Hero() {
                         alt="A stylish rocket single seater"
                         className="rounded-lg "
                     />
+                    </Link>
                 </div>
                 {/* Text Content */}
                 <div className=" my-auto text-center md:mr-40 ">
@@ -126,6 +140,7 @@ function Hero() {
                 {/* Blog Items Section */}
                 <div className='flex gap-0 mx-10 flex-wrap justify-center'>
                     <div className='mx-auto text-center mb-10 sm:mb-5'>
+
                         <Image
                             src="/hero8.jpeg"
                             height={450}
