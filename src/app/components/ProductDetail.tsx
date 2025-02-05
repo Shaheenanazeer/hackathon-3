@@ -1,9 +1,6 @@
 'use client';
 import Image from 'next/image';
 import { urlFor } from '@/sanity/lib/image';
-import { FaCartPlus, FaHeart } from 'react-icons/fa';
-import { BsFacebook } from 'react-icons/bs';
-import { FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { useState } from 'react';
 import { useCart } from '../../../context/CartContext';
 
@@ -65,11 +62,21 @@ const ProductDetail = ({ product }: { product: Product }) => {
             onClick={handleAddToCart}
             className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition transform hover:scale-105"
           >
-            <FaCartPlus className="inline-block mr-2" />
+            <Image
+             src="/Vector.png"
+             alt=''
+             height={28}
+             width={28}
+             className="inline-block mr-2" />
             Add to Cart
           </button>
           <button className="bg-red-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-700 transition transform hover:scale-105">
-            <FaHeart className="inline-block mr-2" />
+            <Image
+             src="/akar-icons_heart.png"
+             alt=''
+             height={28}
+             width={28}
+             className="inline-block mr-2" />
             Wishlist
           </button>
         </div>
@@ -79,3 +86,4 @@ const ProductDetail = ({ product }: { product: Product }) => {
 };
 
 export default ProductDetail;
+
