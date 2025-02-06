@@ -24,7 +24,7 @@ const ProductDetail = ({ product }: { product: Product }) => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center animate-fadeIn pb-9">
       <div className="flex justify-center items-center">
-        <div className="w-full max-w-3xl bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div className=" w-full max-w-3xl bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
           <Image
             src={urlFor(product.image).url()}
             alt={product.name}
